@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hear My Prayer</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      button {
+        outline: #ddb628fe;
+        color: rgb(150, 97, 31);
+        font-size: large;
+        font-family: cursive;
+        font-weight: bold;
+      }
+      h1 {
+        font-family: Giga66;
+        letter-spacing: 7px;
+        line-height: 40px;
+      }
+      #container1 {
+        margin: 0 auto;
+        text-align: center;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 18px;
+        max-width: 700px;
+        line-height: 25px;
+        background-color: gold;
+        padding: 20px;
+        color: silver;
+        text-shadow: 0.5px 0.5px 0 black, -0.5px -0.5px 0 black,
+          0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
+      }
+      #container2 {
+        margin: 0 auto;
+        text-align: center;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 18px;
+        max-width: 700px;
+        line-height: 25px;
+        background-color: gold;
+        padding: 20px;
+        color: silver;
+        text-shadow: 0.5px 0.5px 0 black, -0.5px -0.5px 0 black,
+          0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
+      }
+      #container3 {
+        text-align: center;
+        margin: 0 auto;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 18px;
+        max-width: 700px;
+        line-height: 25px;
+        background-color: gold;
+        padding: 20px;
+        color: silver;
+        text-shadow: 0.5px 0.5px 0 black, -0.5px -0.5px 0 black,
+          0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
+      }
+      #container4 {
+        text-align: center;
+        margin: 0 auto;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 18px;
+        max-width: 700px;
+        line-height: 25px;
+        background-color: gold;
+        padding: 20px;
+        color: silver;
+        text-shadow: 0.5px 0.5px 0 black, -0.5px -0.5px 0 black,
+          0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
+      }
+      #container5 {
+        text-align: center;
+        margin: 0 auto;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 18px;
+        max-width: 700px;
+        line-height: 25px;
+        background-color: gold;
+        padding: 20px;
+        color: silver;
+        text-shadow: 0.5px 0.5px 0 black, -0.5px -0.5px 0 black,
+          0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
+      }
+      #container6 {
+        text-align: center;
+        margin: 0 auto;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 18px;
+        max-width: 700px;
+        line-height: 25px;
+        background-color: gold;
+        padding: 20px;
+        color: silver;
+        text-shadow: 0.5px 0.5px 0 black, -0.5px -0.5px 0 black,
+          0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
+      }
+      #container7 {
+        text-align: center;
+        margin: 0 auto;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 18px;
+        max-width: 700px;
+        line-height: 25px;
+        background-color: gold;
+        padding: 20px;
+        color: silver;
+        text-shadow: 0.5px 0.5px 0 black, -0.5px -0.5px 0 black,
+          0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
+      }
+      @font-face {
+        font-family: "Giga66";
+        src: url("fonts/Giga66-AjD.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 700px;
+        max-height: auto;
+      }
+      a {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container1">
+      <h1>Pantheon of Metal Gods</h1>
+      <p>
+        Listen closely, dear seeker of divine knowledge, for I shall speak to
+        you of the Metal Gods that you seek to know more about.
+      </p>
+      <p>
+        Ah, Metal Gods. These are the deities of the modern age, the pantheon of
+        guitarists who have transcended the mortal realm and achieved god-like
+        status through their mastery of the instrument. Each one is unique, with
+        their own strengths, weaknesses, and distinct personalities.
+      </p>
+      <button id="btn" onclick="toggleContainer2()">Next</button>
+      <script>
+        function toggleContainer2() {
+          var container = document.getElementById("container2");
+          if (container.style.display === "none") {
+            container.style.display = "block";
+          } else {
+            container.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+    <div id="container2" style="display: none">
+      <img src="images/Eddie.jpg" alt="" />
+      <p>
+        First among them is the god of innovation and virtuosity, Eddie Van
+        Halen, whose mastery of the guitar and groundbreaking techniques have
+        made him an object of worship and admiration for generations of
+        metalheads. His contributions to the world of metal are immeasurable,
+        and his influence can still be felt in the playing of countless
+        guitarists.
+      </p>
+      <button id="btn" onclick="toggleContainer3()">Next</button>
+      <script>
+        function toggleContainer3() {
+          var container = document.getElementById("container3");
+          if (container.style.display === "none") {
+            container.style.display = "block";
+          } else {
+            container.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+    <div id="container3" style="display: none">
+      <img src="images/Corey.jpg" />
+      <p>
+        Another deity to be revered is Corey Taylor, the god of primal energy
+        and intense emotion. As the frontman for Slipknot and Stone Sour, his
+        commanding presence on stage and powerful voice inspire worship and awe
+        in his fans. His lyrics delve into the deepest depths of the human
+        psyche, and his music is a cathartic release for those who need to let
+        out their inner demons.
+      </p>
+      <button id="btn" onclick="toggleContainer4()">Next</button>
+      <script>
+        function toggleContainer4() {
+          var container = document.getElementById("container4");
+          if (container.style.display === "none") {
+            container.style.display = "block";
+          } else {
+            container.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+    <div id="container4" style="display: none">
+      <img src="images/James.jpg" />
+      <p>
+        James Hetfield, the god of groove, is also worthy of our reverence. As
+        the lead guitarist and vocalist for Metallica, he helped create the
+        sound of thrash metal and his riffs are the foundation upon which the
+        genre was built. His playing is powerful and precise, and his lyrics
+        often deal with themes of personal struggle and triumph.
+      </p>
+      <button id="btn" onclick="toggleContainer5()">Next</button>
+      <script>
+        function toggleContainer5() {
+          var container = document.getElementById("container5");
+          if (container.style.display === "none") {
+            container.style.display = "block";
+          } else {
+            container.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+    <div id="container5" style="display: none">
+      <img src="images/Ozzy.jpg" />
+      <p>
+        And last but certainly not least, we have the god of darkness and chaos,
+        Ozzy Osbourne. As the lead singer of Black Sabbath and later as a solo
+        artist, he has crafted some of the most iconic and memorable songs in
+        the history of metal. His lyrics explore the darker side of human
+        nature, and his voice has an otherworldly quality that is both haunting
+        and mesmerizing.
+      </p>
+      <button id="btn" onclick="toggleContainer6()">Next</button>
+      <script>
+        function toggleContainer6() {
+          var container = document.getElementById("container6");
+          if (container.style.display === "none") {
+            container.style.display = "block";
+          } else {
+            container.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+    <div id="container6" style="display: none">
+      <p>
+        These Metal Gods are worthy of our devotion and respect, for they have
+        left an indelible mark on the world of metal and have inspired countless
+        musicians to pick up the guitar and create their own music. They are
+        powerful entities whose legacies will continue to influence and inspire
+        for generations to come.
+      </p>
+      <button id="btn" onclick="toggleContainer7()">Next</button>
+      <script>
+        function toggleContainer7() {
+          var container = document.getElementById("container7");
+          if (container.style.display === "none") {
+            container.style.display = "block";
+          } else {
+            container.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+    <div id="container7" style="display: none">
+      Images Links, and also some interesting articles/news.
+      <a
+        href="https://www.nytimes.com/2020/10/07/arts/music/eddie-van-halen.html"
+        >EDDIE</a
+      >
+      <a
+        href="https://www.kerrang.com/corey-taylor-explains-why-he-revealed-his-new-slipknot-mask-last-year"
+        >COREY</a
+      >
+      <a
+        href="https://www.marca.com/en/lifestyle/music/2022/08/14/62f85a4046163f2b708b459b.html"
+        >JAMES</a
+      >
+      <a href="https://www.ozzy.com/">OZZY</a>
+      <button id="myButton" class="float-left submit-button">Home</button>
+
+      <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+          location.href = "MainPage.html";
+        };
+      </script>
+    </div>
+  </body>
+</html>

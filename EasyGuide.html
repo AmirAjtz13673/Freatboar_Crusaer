@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The journey begins!</title>
+    <style>
+      body {
+        background-color: rgb(163, 163, 163);
+      }
+      .container {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14px;
+        max-width: 700px;
+        line-height: 20px;
+        background-color: brown;
+        padding: 20px;
+        box-shadow: 0px 0px 10px #000000;
+        color: white;
+      }
+      h1 {
+        font-family: Giga66;
+        letter-spacing: 7px;
+      }
+      #btn {
+        font-family: monospace;
+        font-weight: bold;
+      }
+      #container2 {
+        position: fixed;
+        top: 10px;
+        left: 760px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14px;
+        max-width: 400px;
+        background-color: #000000;
+        padding: 20px;
+        box-shadow: 0px 0px 10px #000000;
+        color: red;
+      }
+      #container3 {
+        position: fixed;
+        top: 275px;
+        left: 760px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14px;
+        max-width: 400px;
+        background-color: #000000;
+        padding: 20px;
+        box-shadow: 0px 0px 10px #000000;
+        color: red;
+      }
+      #container4 {
+        position: fixed;
+        top: 425px;
+        left: 760px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14px;
+        max-width: 400px;
+        background-color: #000000;
+        padding: 20px;
+        box-shadow: 0px 0px 10px #000000;
+        color: red;
+      }
+      #container5 {
+        position: fixed;
+        top: 10px;
+        left: 1210px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14px;
+        max-width: 275px;
+        background-color: #000000;
+        padding: 20px;
+        box-shadow: 0px 0px 10px #000000;
+        color: red;
+        
+      }
+      #container6 {
+        position: fixed;
+        top: 320px;
+        left: 1210px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14px;
+        max-width: 275px;
+        background-color: #000000;
+        padding: 20px;
+        box-shadow: 0px 0px 10px #000000;
+        color: red;
+        
+      }
+      a{
+        color: white;
+      }
+      @font-face {
+        font-family: "Giga66";
+        src: url("fonts/Giga66-AjD.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Is that it</h1>
+      <p id="par1">
+        Ha! You think playing the electric guitar is easy? Think again, my
+        friend. This is no instrument for the faint of heart. It takes blood,
+        sweat, and tears to truly master the art of metal.
+      </p>
+      <p id="par2">
+        So, practice until your fingers bleed. And then practice some more.
+        Metal is not for the weak - it's for those who are willing to push
+        themselves to the limit.
+      </p>
+      <p id="par3">
+        And don't you dare give up when things get tough. The best metal
+        guitarists didn't become great overnight. They put in countless hours of
+        grueling practice and refused to back down in the face of adversity.
+      </p>
+      <p id="par4">
+        But don't worry, it's not all torture and pain. There's something deeply
+        satisfying about nailing a difficult riff or solo. The rush of
+        adrenaline that comes with playing metal is unlike anything else.
+      </p>
+      <p id="par5">
+        So, embrace the cruelty, my friend. Embrace the grind. And most of all,
+        embrace the metal. Because when you finally master that sweet, sweet
+        riff, it'll all be worth it.
+      </p>
+      <button id="btn" onclick="toggleContainer()">Next</button>
+    </div>
+    <script>
+      function toggleContainer() {
+        var container = document.getElementById("container2");
+        if (container.style.display === "none") {
+          container.style.display = "block";
+        } else {
+          container.style.display = "none";
+        }
+      }
+    </script>
+    <div id="container2" style="display: none">
+      <h1>How to start</h1>
+      <p id="par6">
+        So, aspiring shredder! Are you ready to unleash your inner rockstar on
+        the electric guitar? Here's what you need to know to get started. First
+        off, you'll need an electric guitar and an amp. Don't settle for a cheap
+        knockoff - invest in a quality instrument that feels good in your hands
+        and sounds killer through your amp.
+      </p>
+      <button id="btn" onclick="toggleContainer2()">Next</button>
+    </div>
+    <script>
+      function toggleContainer2() {
+        var container = document.getElementById("container3");
+        if (container.style.display === "none") {
+          container.style.display = "block";
+        } else {
+          container.style.display = "none";
+        }
+      }
+    </script>
+    <div id="container3" style="display: none">
+      <p>
+        Next, start practicing your power chords, palm muting, and alternate
+        picking techniques. These are the building blocks of any great metal
+        riff.
+      </p>
+      <button id="btn" onclick="toggleContainer3()">Next</button>
+    </div>
+    <script>
+      function toggleContainer3() {
+        var container = document.getElementById("container4");
+        if (container.style.display === "none") {
+          container.style.display = "block";
+        } else {
+          container.style.display = "none";
+        }
+      }
+    </script>
+    <div id="container4" style="display: none">
+      <p>
+        Don't be afraid to crank up the distortion and let it rip. Metal is all
+        about raw, aggressive energy, so embrace the noise and let your fingers
+        fly.
+      </p>
+      <button id="btn" onclick="toggleContainer4()">Next</button>
+    </div>
+    <script>
+      function toggleContainer4() {
+        var container = document.getElementById("container5");
+        if (container.style.display === "none") {
+          container.style.display = "block";
+        } else {
+          container.style.display = "none";
+        }
+      }
+    </script>
+    <div id="container5" style="display: none">
+      <p>
+        Once you've got the basics down, start learning your favorite metal
+        songs and solos. You can find tabs and tutorials online or in guitar
+        magazines. Practice until you can play them flawlessly, then start
+        creating your own riffs and solos. Remember, playing electric guitar is
+        all about attitude. Be bold, be daring, and don't be afraid to make some
+        noise. With enough practice and passion, you'll soon be shredding like a
+        true metal god.
+      </p>
+      <button id="btn" onclick="toggleContainer5()">Next</button>
+    </div>
+    <script>
+      function toggleContainer5() {
+        var container = document.getElementById("container6");
+        if (container.style.display === "none") {
+          container.style.display = "block";
+        } else {
+          container.style.display = "none";
+        }
+      }
+    </script>
+    </div>
+    <div id="container6" style="display: none;">
+    <p>
+      Here are some links for you to explore. You can find TABS there and much more!
+    </p>
+    <a href="https://www.ultimate-guitar.com/explore?genres[]=8">ULTIMATE-GUITAR</a>
+    <a href="https://www.songsterr.com/">SONGSTERR</a>
+    <p>And also do not forget to visit Metal community websites!!!</p>
+    <a href="https://metalheadcommunity.com/">METALCOMMUNITY</a>
+    <button id="myButton" class="float-left submit-button">Home</button>
+    </div>
+    <script>
+      document.getElementById("myButton").onclick = function () {
+        location.href = "MainPage.html";
+      };
+    </script>
+  </body>
+</html>

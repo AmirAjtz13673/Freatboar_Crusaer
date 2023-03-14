@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      setTimeout(function () {
+        window.location.href = "Quiz.html";
+      }, 6000);
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ready</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      #popup {
+        color: red;
+        position: fixed;
+        top: 300px;
+        left: 530px;
+        position: absolute;
+        font-family: Giga66;
+        animation-name: scale;
+        animation-duration: 2.3s;
+        animation-fill-mode: forwards;
+        font-size: 50px;
+        display: block;
+      }
+      @keyframes scale {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(3);
+          opacity: 0;
+        }
+      }
+      #popup2 {
+        color: red;
+        position: fixed;
+        top: 300px;
+        left: 670px;
+        font-family: Giga66;
+        animation-name: scale;
+        animation-delay: 0s;
+        animation-duration: 2.3s;
+        animation-fill-mode: forwards;
+        text-align: center;
+        font-size: 50px;
+        display: none;
+      }
+      @keyframes scale {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(3);
+          opacity: 0;
+        }
+      }
+      @font-face {
+        font-family: "Giga66";
+        src: url("fonts/Giga66-AjD.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <a id="popup">ARE YOU READY</a>
+    <a id="popup2">BEGIN</a>
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        var popup = document.getElementById("popup");
+        var popup2 = document.getElementById("popup2");
+        popup.addEventListener("animationend", function () {
+          popup.style.display = "none";
+          popup2.style.display = "block";
+        });
+      });
+    </script>
+  </body>
+</html>

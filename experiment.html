@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container2 {
+        position: fixed;
+        left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Is that it</h1>
+      <p id="par1">
+        Ha! You think playing the electric guitar is easy? Think again, my
+        friend. This is no instrument for the faint of heart. It takes blood,
+        sweat, and tears to truly master the art of metal.
+      </p>
+      <p id="par2">
+        So, practice until your fingers bleed. And then practice some more.
+        Metal is not for the weak - it's for those who are willing to push
+        themselves to the limit.
+      </p>
+      <p id="par3">
+        And don't you dare give up when things get tough. The best metal
+        guitarists didn't become great overnight. They put in countless hours of
+        grueling practice and refused to back down in the face of adversity.
+      </p>
+      <p id="par4">
+        But don't worry, it's not all torture and pain. There's something deeply
+        satisfying about nailing a difficult riff or solo. The rush of
+        adrenaline that comes with playing metal is unlike anything else.
+      </p>
+      <p id="par5">
+        So, embrace the cruelty, my friend. Embrace the grind. And most of all,
+        embrace the metal. Because when you finally master that sweet, sweet
+        riff, it'll all be worth it.
+      </p>
+      <button id="btn" onclick="toggleContainer2()">
+        Click to reveal container
+      </button>
+    </div>
+    <div id="container2" style="display: none">
+      <p>This is the content of the container.</p>
+    </div>
+
+    <script>
+      function toggleContainer2() {
+        var container = document.getElementById("container2");
+        if (container.style.display === "none") {
+          container.style.display = "block";
+        } else {
+          container.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(163, 163, 163);
+      }
+      #container1 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14px;
+        max-width: 700px;
+        line-height: 20px;
+        background-color: brown;
+        padding: 20px;
+        box-shadow: 0px 0px 10px #000000;
+        color: white;
+      }
+      #container2 {
+        position: absolute;
+        top: 250px;
+        left: 10px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14px;
+        max-width: 700px;
+        line-height: 20px;
+        background-color: brown;
+        padding: 20px;
+        box-shadow: 0px 0px 10px #000000;
+        color: white;
+      }
+      #container3 {
+        position: absolute;
+        top: 490px;
+        left: 10px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14px;
+        max-width: 700px;
+        line-height: 20px;
+        background-color: brown;
+        padding: 20px;
+        box-shadow: 0px 0px 10px #000000;
+        color: white;
+      }
+      #container4 {
+        position: absolute;
+        top: 10px;
+        left: 760px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14px;
+        max-width: 300px;
+        line-height: 20px;
+        background-color: brown;
+        padding: 20px;
+        box-shadow: 0px 0px 10px #000000;
+        color: white;
+      }
+      #container5 {
+        position: absolute;
+        top: 330px;
+        left: 760px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14px;
+        max-width: 300px;
+        line-height: 20px;
+        background-color: brown;
+        padding: 20px;
+        box-shadow: 0px 0px 10px #000000;
+        color: white;
+      }
+      a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container1">
+      <p>
+        Alright, you think you're an advanced metal guitar player? Think again,
+        because we're about to kick your playing up a notch. But be warned, if
+        you didn't bother to learn theory or practice your arpeggios, you're in
+        for a rude awakening. First up, we're diving into some serious advanced
+        techniques. If you thought sweep picking and string skipping were tough,
+        get ready to face the challenge of hybrid picking, economy picking, and
+        tapping in odd time signatures. Don't think you can handle it? Well,
+        maybe you're not as advanced as you thought.
+      </p>
+      <button id="btn" onclick="toggleContainer2()">Next</button>
+      <script>
+        function toggleContainer2() {
+          var container = document.getElementById("container2");
+          if (container.style.display === "none") {
+            container.style.display = "block";
+          } else {
+            container.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+    <div id="container2" style="display: none">
+      <p>
+        First up, we're diving into some serious advanced techniques. If you
+        thought sweep picking and string skipping were tough, get ready to face
+        the challenge of hybrid picking, economy picking, and tapping in odd
+        time signatures. Don't think you can handle it? Well, maybe you're not
+        as advanced as you thought. But technique is only half the battle. You
+        also need to have a deep understanding of music theory concepts like
+        chord substitutions, modulation, and complex time signatures. And don't
+        forget about harmonic analysis - how else will you write those epic
+        solos that leave your fans gasping for breath?
+      </p>
+      <button id="btn" onclick="toggleContainer3()">Next</button>
+      <script>
+        function toggleContainer3() {
+          var container = document.getElementById("container3");
+          if (container.style.display === "none") {
+            container.style.display = "block";
+          } else {
+            container.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+    <div id="container3" style="display: none">
+      <p>
+        And let's not forget about tone. If you think your tone is already
+        killer, think again. You need to experiment with different amps, cabs,
+        pedals, and pickups until you find the perfect combination that truly
+        showcases your unique sound. And don't even get us started on mastering
+        the art of recording and mixing. Of course, it's not just about
+        technique, theory, and tone. You also need to be a master of
+        performance. That means developing your stage presence, honing your
+        improvisation skills, and being able to connect with your audience on a
+        deep level. If you can't do that, you might as well stick to playing in
+        your bedroom.
+      </p>
+      <button id="btn" onclick="toggleContainer4()">Next</button>
+      <script>
+        function toggleContainer4() {
+          var container = document.getElementById("container4");
+          if (container.style.display === "none") {
+            container.style.display = "block";
+          } else {
+            container.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+    <div id="container4" style="display: none">
+      <p>
+        So, there you have it, supposed advanced players. If you're feeling
+        intimidated, that's because you should be. But if you're ready to step
+        up your game and become a true metal guitar virtuoso, then follow these
+        steps and put in the hours of practice. Just remember, this tutorial is
+        not for the weak - only the most dedicated, skilled, and daring players
+        will come out on top.
+      </p>
+      <button id="btn" onclick="toggleContainer5()">Next</button>
+      <script>
+        function toggleContainer5() {
+          var container = document.getElementById("container5");
+          if (container.style.display === "none") {
+            container.style.display = "block";
+          } else {
+            container.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+    <div id="container5" style="display: none">
+      <p>BAM! Links to useful sources! Use wisely!</p>
+      <a href="https://guitar.com/guides/">EXPLORE!</a>
+      <a
+        href="https://www.justinguitar.com/classes/advanced-guitar-course-grade-seven"
+        >TIMETOPAY</a
+      >
+      <a href="https://slipknot1.com/theendsofar/">SLIPKNOT</a>
+      <a href="https://en.wikipedia.org/wiki/Slipknot_(band)">SLIPKNOT</a>
+      <a href="https://www.facebook.com/slipknot/">SLIPKNOT</a>
+      <button id="myButton" class="float-left submit-button">Home</button>
+
+      <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+          location.href = "MainPage.html";
+        };
+      </script>
+    </div>
+  </body>
+</html>
