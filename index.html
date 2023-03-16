@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fretboard Crusader - Electric Guitar Starter's Guide</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="start-menu">
+      <a href="Warning.html">Start</a>
+      <a href="Options.html">Options</a>
+      <a href="Quit.html">Quit</a>
+    </div>
+    <div id="fretboard-crusader">
+      <span>Fretboard</span>
+      <span>Crusader</span>
+    </div>
+    <div id="background">
+      <img src="images/NewImage.png" alt="" />
+    </div>
+    <button id="btn" onclick="playAudio()">Music</button>
+    <script type="text/javascript">
+      const audio = new Audio();
+      audio.src = "sounds/Death.mp3";
+
+      function playAudio() {
+        audio.play();
+        shakeElements();
+      }
+
+      function shakeElements() {
+        const elements = document.querySelectorAll("*");
+        const duration = 104000;
+        const amplitude = 20;
+        const frequency = 100;
+
+        const startTime = Date.now();
+        const endTime = startTime + duration;
+
+        function shake() {
+          const time = Date.now();
+          if (time < endTime) {
+            const progress = (time - startTime) / duration;
+            const angle = progress * 2 * Math.PI * frequency;
+            const displacement = Math.sin(angle) * amplitude;
+            for (let i = 0; i < elements.length; i++) {
+              elements[
+                i
+              ].style.transform = `translate(${displacement}px, ${displacement}px)`;
+            }
+            requestAnimationFrame(shake);
+          } else {
+            for (let i = 0; i < elements.length; i++) {
+              elements[i].style.transform = "";
+            }
+          }
+        }
+
+        requestAnimationFrame(shake);
+      }
+    </script>
+    <a id="wtf">It wont stop until the end</a>
+  </body>
+</html>
